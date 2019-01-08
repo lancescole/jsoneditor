@@ -64,10 +64,10 @@
  * @param {Object | undefined} json JSON object
  */
 /// <reference types="jquery" />
-export function JSONEditor(container: Element, options?: IOptions, json?: any): any;
+export function JSONEditor(container: Element, options?: IJsonOptions, json?: any): void;
 
-export interface IOptions {
-    mode?: modeType;
+export interface IJsonOptions {
+    mode?: ModeTypes;
     onChange?: Function;
     onChangeJSON?: Function;
     onChangeText?: Function;
@@ -83,7 +83,7 @@ export interface IOptions {
     modalAnchor?: HTMLElement;
     onEvent?: Function;
 }
-export enum modeType {
+export enum ModeTypes {
     tree = "tree",
     form = "form",
     view = "view",
