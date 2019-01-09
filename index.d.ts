@@ -64,7 +64,6 @@
  * @param {Object | undefined} json JSON object
  */
 /// <reference types="jquery" />
-export function JSONEditor(container: Element, options?: IJsonOptions, json?: any): void;
 
 export interface IJsonOptions {
     mode?: string;
