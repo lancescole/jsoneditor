@@ -67,7 +67,7 @@
 export function JSONEditor(container: Element, options?: IJsonOptions, json?: any): void;
 
 export interface IJsonOptions {
-    mode?: ModeTypes;
+    mode?: string;
     onChange?: Function;
     onChangeJSON?: Function;
     onChangeText?: Function;
@@ -82,11 +82,4 @@ export interface IJsonOptions {
     onTextSelectionChange?: Function;
     modalAnchor?: HTMLElement;
     onEvent?: Function;
-}
-export enum ModeTypes {
-    tree = "tree",
-    form = "form",
-    view = "view",
-    text = "text",
-    code = "code"
 }
