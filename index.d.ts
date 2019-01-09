@@ -64,6 +64,11 @@
  * @param {Object | undefined} json JSON object
  */
 /// <reference types="jquery" />
+import JSONEditor = require("./src/js/JSONEditor");
+declare namespace JSONEditorTs {
+    export function JSONEditor(): void;
+}
+declare function JSONEditorTs(container: Element, options?: IJsonOptions, json?: any): void;
 
 export interface IJsonOptions {
     mode?: string;
@@ -82,3 +87,5 @@ export interface IJsonOptions {
     modalAnchor?: HTMLElement;
     onEvent?: Function;
 }
+
+export = JSONEditorTs;
